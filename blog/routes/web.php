@@ -10,6 +10,8 @@ Route::get('/home', function () {
 });
 // Route::view("/home","home");
 
+// Route::redirect('/home','/');
+
 Route::get('/about/{name}',function($name){
     
     return view('about',['name'=>$name]);
