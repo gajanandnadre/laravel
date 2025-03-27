@@ -11,4 +11,10 @@ class UserController extends Controller
     function getUser(){
         return "gaju nadre";
     }
+    function aboutUser(){
+        return "this is form gaju nadre address";
+    }
+    function getUserName($name){
+        return "this is from $name ";
+    }
 }
