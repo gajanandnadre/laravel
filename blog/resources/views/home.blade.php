@@ -9,3 +9,15 @@
 @else
 <h2>this is other user </h2>
 @endif
+
+<div>
+    @foreach($users as $user)
+    <h3>{{$user}}</h3>
+    @endforeach
+</div>
+
+<div>
+    @for($i = 0; $i <= 10; $i++)
+    <h2> {{$i}} </h2>
+    @endfor
+</div>
