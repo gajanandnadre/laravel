@@ -23,11 +23,16 @@ class UserController extends Controller
     function userForm(Request $request){
 
         $request->validate([
-            'full_name'=>'required',
+            'full_name'=>'required | min:2 | max:50',
             'mobile_number'=>'required',
-            'email'=>'required'|'email',
+            'email'=>'required | email',
             'password'=>'required',
             'city'=>'required'
+        ],[
+            'full_name.required'=>'full_name can not be empty',
+            'full_name.min'=>'full_name is minimum 2 characters',
+            'full_name.max'=>'full_name is not be greter than  20 characters',
+            'email.email'=>'This email is not valid ',
         ]);
       echo "Name is ". $request->full_name;
       echo "</br>";
