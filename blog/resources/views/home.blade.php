@@ -22,3 +22,4 @@
     <h2> {{$i}} </h2>
     @endfor
 </div>
+<x-message-banner />
