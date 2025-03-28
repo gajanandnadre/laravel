@@ -23,3 +23,4 @@
     @endfor
 </div>
 <x-message-banner />
+<x-message-banner />
