@@ -17,6 +17,8 @@ Route::get('/', function () {
     
 //     return view('about',['name'=>$name]);
 // });
+Route :: view('user-form','user-form');
+Route :: post('adduser',[UserController::class,'userForm']);
 
 Route::get('/home',[UserController::class,'userHome']);
 // Route::get('/user',[UserController::class,'getUser']);

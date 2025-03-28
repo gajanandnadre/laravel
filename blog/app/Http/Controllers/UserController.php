@@ -19,11 +19,37 @@ class UserController extends Controller
     function aboutUser(){
         return view('about');
     }
-    function adminLogin(){
-        return view('admin.login');
+
+    function userForm(Request $request){
+
+        $request->validate([
+            'full_name'=>'required',
+            'mobile_number'=>'required',
+            'email'=>'required'|'email',
+            'password'=>'required',
+            'city'=>'required'
+        ]);
+      echo "Name is ". $request->full_name;
+      echo "</br>";
+      echo "mobile number is ". $request->mobile_number;
+      echo "</br>";
+      echo "Email Id  is ". $request->email;
+      echo "</br>";
+      echo "password  is ". $request->password;
+      echo "</br>";
+      echo "City is ". $request->city;
+      echo "</br>";
+    //   return $request;
     }
-    function getUserName($name){
-        // return "this is from $name ";
-        return view('getUserName',['user'=>$name]);
-    }
+
+
+
+
+    // function adminLogin(){
+    //     return view('admin.login');
+    // }
+    // function getUserName($name){
+    //     // return "this is from $name ";
+    //     return view('getUserName',['user'=>$name]);
+    // }
 }
