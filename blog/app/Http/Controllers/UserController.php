@@ -11,8 +11,10 @@ class UserController extends Controller
     // function getUser(){
     //     return "gaju nadre";
     // }
-    function getUser(){
-        return view('user');
+    function userHome(){
+        $name = "gajanand";
+        $users = ['datta','avinash','gaju','ganesh'];
+        return view('home',['name'=>$name,'users'=>$users]);
     }
     function aboutUser(){
         return "this is form gaju nadre address";
@@ -22,6 +24,6 @@ class UserController extends Controller
     }
     function getUserName($name){
         // return "this is from $name ";
-        return view('getUserName',['name'=>$name]);
+        return view('getUserName',['user'=>$name]);
     }
 }

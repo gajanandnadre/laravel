@@ -1,1 +1,1 @@
-<h1>Welcome page in  hellow laravel </h1>
+<h1> hellow laravel </h1>

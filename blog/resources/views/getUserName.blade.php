@@ -1,1 +1,1 @@
-<h1> the user of is here {{$name}} </h1>
+<h1> the user of is here {{$user}} </h1>
