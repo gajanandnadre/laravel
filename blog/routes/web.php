@@ -20,6 +20,6 @@ Route::get('/', function () {
 
 Route::get('/home',[UserController::class,'userHome']);
 // Route::get('/user',[UserController::class,'getUser']);
-// Route::get('/about',[UserController::class,'aboutUser']);
+Route::get('/about',[UserController::class,'aboutUser']);
 // Route::get('/admin',[UserController::class,'adminLogin']);
 // Route::get('/user/{name}',[UserController::class,'getUserName']);

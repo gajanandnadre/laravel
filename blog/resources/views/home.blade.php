@@ -1,3 +1,4 @@
+@includeIf('common.header')
 <h1> This is home page  </h1>
 <!-- <h1> {{$name}} </h1> -->
 <!-- <h1> {{$users[0]}} </h1> -->

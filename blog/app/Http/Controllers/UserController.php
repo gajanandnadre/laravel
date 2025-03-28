@@ -17,7 +17,7 @@ class UserController extends Controller
         return view('home',['name'=>$name,'users'=>$users]);
     }
     function aboutUser(){
-        return "this is form gaju nadre address";
+        return view('about');
     }
     function adminLogin(){
         return view('admin.login');
