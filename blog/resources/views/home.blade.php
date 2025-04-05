@@ -18,9 +18,9 @@
 </div>
 
 <div>
-    @for($i = 0; $i <= 10; $i++)
+    <!-- @for($i = 0; $i <= 10; $i++)
     <h2> {{$i}} </h2>
-    @endfor
+    @endfor -->
 </div>
 <x-message-banner />
 <x-message-banner />
